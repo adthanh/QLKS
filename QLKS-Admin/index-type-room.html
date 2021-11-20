@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Home-Admin</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- link font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style-member.css">
+    <link rel="stylesheet" href="css/style-header.css">
+    <link rel="stylesheet" href="css/style-room.css">
+
+</head>
+
+<body>
+    <div class="box-header">
+        <div class="nav-side-menu">
+            <div class="brand">LUXE</div>
+            <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+            <div class="menu-list">
+                <ul id="menu-content" class="menu-content collapse out">
+                    <li class="active">
+                        <a href="index-home.html">
+                            <i class="fas fa-money-check"></i> Bảng Điều Khiển
+                        </a>
+                    </li>
+
+                    <li data-toggle="collapse" data-target="#products" class="collapsed">
+                        <a><i class="fas fa-person-booth"></i>Quản Lý Phòng <i class="fas fa-angle-down"></i></a>
+                    </li>
+                    <ul class="sub-menu collapse" id="products">
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Phòng</a></li>
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Loại Phòng</a></li>
+                    </ul>
+
+
+                    <li data-toggle="collapse" data-target="#user" class="collapsed">
+                        <a><i class="fas fa-user-tag"></i> Nhân Viên <i class="fas fa-angle-down"></i></a>
+                    </li>
+                    <ul class="sub-menu collapse" id="user">
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Thông tin nhân viên</a></li>
+                    </ul>
+
+                    <li data-toggle="collapse" data-target="#new" class="collapsed">
+                        <a><i class="fas fa-swatchbook"></i>Thống Kê <i class="fas fa-angle-down"></i></a>
+                    </li>
+                    <ul class="sub-menu collapse" id="new">
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Danh Sách Hóa Đơn</a></li>
+                    </ul>
+
+                    <li data-toggle="collapse" data-target="#service" class="collapsed">
+                        <a><i class="fa fa-car fa-lg"></i>Dịch Vụ <i class="fas fa-angle-down"></i></a>
+                    </li>
+                    <ul class="sub-menu collapse" id="service">
+                        <li><a href="#"><i class="fas fa-angle-right"></i>Danh Sách Dịch Vụ</a></li>
+                    </ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-users fa-lg"></i> Nhà Phát Triển
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="box-body">
+        <div class="body-middle-top">
+            <h4>Quản Lý Loại Phòng</h4>
+        </div>
+        <div class="body-middle-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group btn-create-member">
+                            <div class="row justify-content-end">
+                                <div class="col-12 col-lg-6">
+                                    <form action="" method="post">
+                                        <div class="input-group search-member">
+                                            <input type="text" class="form-control" placeholder="Search ..." aria-label="Text input with segmented dropdown button">
+                                            <div class="input-group-append">
+                                                <button type="button" class="btn  btn-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fas fa-search"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-12 col-lg-3">
+                                    <form action="" method="post">
+                                        <button type="button" data-toggle="modal" data-target="#createRoom" class="btn btn-info"> Thêm Phòng +</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body-middle-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group middle-3-top">
+                            <label for="">Thông Tin Phòng</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="middle-3">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-light table-bordered middle-3-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Loại Phòng</th>
+                                            <th scope="col">Miêu Tả</th>
+                                            <th class="setting" scope="col">Công Cụ</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Vip</td>
+                                            <td>Nếu quý khách muốn một nơi thực sự đặc biệt, phòng VIP với thiết kế ấn tượng</td>
+                                            <td class="setting">
+                                                <ul>
+                                                    <li data-toggle="modal" data-target="#editRoom"><button type="button" class="btn btn-warning">Sửa</button></li>
+                                                    <li data-toggle="modal" data-target="#deleteMember"><button type="button" class="btn btn-danger">Xóa</button></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal createRoom -->
+    <form>
+        <div class="modal fade" id="createRoom" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Tạo Mới Loại Phòng</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12 ">
+                                <div class="form-group">
+                                    <label for="">Tên Loại Phòng :</label>
+                                    <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Info Room ...">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-12">
+                                <div class="form-group">
+                                    <label for="">Ghi Chú :</label>
+                                    <textarea class="form-control" name="" id="" rows="3" placeholder="Note ..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                            <button type="button" class="btn btn-primary">Lưu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- Modal Edit Room -->
+    <form>
+        <div class="modal fade" id="editRoom" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Sửa Loại Phòng</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class=" form-group ">
+                                    <label for=" ">Tên Loại Phòng :</label>
+                                    <input type="text " class="form-control " name=" " id=" " aria-describedby="helpId " placeholder="Info Room ... ">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-12 ">
+                                <div class="form-group ">
+                                    <label for=" ">Ghi Chú :</label>
+                                    <textarea class="form-control " name=" " id=" " rows="3 " placeholder="Note ... "></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer ">
+                            <button type="button " class="btn btn-secondary " data-dismiss="modal ">Hủy</button>
+                            <button type="button " class="btn btn-primary ">Lưu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- Modal Delete Room -->
+    <form>
+        <div class="modal fade " id="deleteMember " tabindex="-1 " role="dialog " aria-labelledby="exampleModalCenterTitle " aria-hidden="true ">
+            <div class="modal-dialog modal-dialog-centered " role="document ">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <h5 class="modal-title " id="exampleModalCenterTitle ">Xóa Loại Phòng</h5>
+                        <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                            <span aria-hidden="true ">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body ">
+                        <div class="row ">
+                            <div class="col-12 ">
+                                <div class="form-group ">
+                                    <label for=" ">Bạn Có Muốn Xóa Loại Phòng Này Không</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer ">
+                            <button type="button " class="btn btn-secondary " data-dismiss="modal ">Hủy</button>
+                            <button type="button " class="btn btn-danger ">Có</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+
+
+
+    <!-- Javascript -->
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+.body-middle-2 .btn-create-member {
+    text-align: end;
+}
+
+.body-middle-2 .btn-create-member .search-member>.input-group-append select {
+    border-radius: unset;
+}
+
+.body-middle-2 .btn-create-member .search-member>.input-group-append button {
+    border: 1px solid #ced4da;
+    border-left: unset;
+}
+
+.body-middle-2 .btn-create-member button {
+    font-size: 12px;
+}
+
+.body-middle-2 {
+    margin-top: 20px;
+}
+
+
+/* .middle-3  */
+
+.middle-3-top label {
+    font-weight: 600;
+}
+
+.middle-3 .setting {
+    text-align: center;
+}
+
+.middle-3 .setting ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+
+.middle-3 .setting ul li {
+    float: left;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.middle-3 .setting ul li button {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.middle-3-table thead {
+    background: #4f5b69;
+    color: white;
+}

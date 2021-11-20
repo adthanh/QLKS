@@ -1,0 +1,9 @@
+@media only screen and (max-width:990px) {
+    .middle-3-top .middle-3-list-item {
+        margin-top: 20px;
+    }
+}
+
+.body-middle-3 {
+    margin-top: 20px;
+}
